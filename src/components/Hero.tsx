@@ -17,7 +17,7 @@ const textVariants = {
 const Hero = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 px-6 md:px-12 lg:px-24 flex flex-col justify-center circuit-bg relative overflow-hidden">
-      <div className="absolute right-[20%] md:right-[8%] top-[14%] transform -translate-y-1/2 z-20 scale-75 md:scale-100 animate-spin-slow">
+      <div className="absolute right-[5%] md:right-[8%] top-[10%] md:top-[14%] transform -translate-y-1/2 z-20 scale-50 md:scale-100 animate-spin-slow">
         <CirclePattern />
       </div>
       <HackerFigure />
