@@ -3,35 +3,39 @@ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const Navbar = () => {
-  const navItems = [
+  const leftNavItems = [
     { text: "ABOUT US", path: "/about" },
     { text: "EVENTS", path: "/events" },
     { text: "TEAM", path: "/team" },
+  ];
+
+  const rightNavItems = [
     { text: "PHILOSOPHY", path: "/philosophy" },
     { text: "RULES", path: "/rules" },
     { text: "CONTACTS", path: "/contacts" },
   ];
 
   return (
-    <header className="w-full py-5 px-6 md:px-12 lg:px-24 flex items-center justify-between fixed top-0 z-50 bg-transparent">
+    <header className="w-full py-5 px-6 md:px-12  lg:px-24 flex items-center justify-center fixed top-0 z-50 bg-transparent">
       <nav className="hidden md:flex items-center space-x-10">
-        {navItems.slice(0, 3).map((item) => (
+        {leftNavItems.map((item) => (
           <Link
             key={item.text}
             to={item.path}
             className="text-white text-sm font-montserrat tracking-wider hover:text-hackerGreen transition-colors"
+            // className="text-white text-sm font-montserrat tracking-wider hover:text-hackerGreen transition-colors font-bold"
           >
             {item.text}
           </Link>
         ))}
       </nav>
 
-      <div className="flex md:absolute md:left-1/2 md:-translate-x-1/2">
+      <div className="flex mx-10">
         <Logo />
       </div>
 
       <nav className="hidden md:flex items-center space-x-10">
-        {navItems.slice(3).map((item) => (
+        {rightNavItems.map((item) => (
           <Link
             key={item.text}
             to={item.path}

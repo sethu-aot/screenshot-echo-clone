@@ -83,16 +83,21 @@ export default {
 					'50%': { boxShadow: '0 0 0 10px rgba(163, 255, 0, 0)' },
 				},
 				'float': {
-					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-10px)' },
-				}
-			},
-			animation: {
+						'0%, 100%': { transform: 'translateY(0)' },
+						'50%': { transform: 'translateY(-10px)' },
+					},
+					'spin-slow': {
+						'0%': { transform: 'rotate(0deg)' },
+						'100%': { transform: 'rotate(360deg)' },
+					}
+				},
+				animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'binary': 'binary 3s ease-in-out infinite',
 				'pulse-green': 'pulse-green 2s infinite',
 				'float': 'float 6s ease-in-out infinite',
+				'spin-slow': 'spin-slow 120s linear infinite',
 			}
 		}
 	},

@@ -2,6 +2,8 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import HackerFigure from "./HackerFigure";
+import { CirclePattern } from "./CirclePattern";
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -14,7 +16,11 @@ const textVariants = {
 
 const Hero = () => {
   return (
-    <div className="min-h-screen pt-24 pb-16 px-6 md:px-12 lg:px-24 flex flex-col justify-center circuit-bg">
+    <div className="min-h-screen pt-24 pb-16 px-6 md:px-12 lg:px-24 flex flex-col justify-center circuit-bg relative overflow-hidden">
+      <div className="absolute right-[20%] md:right-[8%] top-[14%] transform -translate-y-1/2 z-20 scale-75 md:scale-100 animate-spin-slow">
+        <CirclePattern />
+      </div>
+      <HackerFigure />
       <motion.div 
         className="max-w-4xl z-10 relative mt-16"
         initial="hidden"
