@@ -13,8 +13,8 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full py-4 px-6 md:px-12 flex items-center justify-between fixed top-0 z-50 bg-hackerDark bg-opacity-80 backdrop-blur-md">
-      <nav className="hidden md:flex items-center space-x-6">
+    <header className="w-full py-5 px-6 md:px-12 lg:px-24 flex items-center justify-between fixed top-0 z-50 bg-transparent">
+      <nav className="hidden md:flex items-center space-x-10">
         {navItems.slice(0, 3).map((item) => (
           <Link
             key={item.text}
@@ -30,7 +30,7 @@ const Navbar = () => {
         <Logo />
       </div>
 
-      <nav className="hidden md:flex items-center space-x-6">
+      <nav className="hidden md:flex items-center space-x-10">
         {navItems.slice(3).map((item) => (
           <Link
             key={item.text}
