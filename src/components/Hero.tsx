@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 px-6 md:px-12 lg:px-24 flex flex-col justify-center circuit-bg">
-      <div className="max-w-4xl z-10">
+      <div className="max-w-4xl z-10 relative">
         <h1 className="font-montserrat text-3xl md:text-4xl lg:text-7xl font-bold mb-2 text-white tracking-wider">
           <span className="text-xl md:text-2xl block mb-2">E T H I C A L</span>
           <span className="text-white">HACK<span className="text-hackerGreen">ING</span></span>
